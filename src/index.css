@@ -127,7 +127,7 @@
 
 .NextButton {
   @apply flex justify-center gap-2 my-3;
-  @apply text-white rounded-md shadow-sm bg-primary-600;
+  @apply text-white transition rounded-md shadow-sm bg-primary-600 hover:brightness-110;
   @apply self-stretch p-3 mx-6 md:self-end md:mx-12 md:px-4;
 }
 
