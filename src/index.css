@@ -89,7 +89,7 @@
 }
 
 .FormGroup svg {
-  @apply absolute pointer-events-none top-10 right-4;
+  @apply absolute top-10 right-4;
 }
 
 .FormGroup input {

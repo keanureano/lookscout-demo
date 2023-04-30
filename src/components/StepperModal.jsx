@@ -1,4 +1,5 @@
 import { InfoIcon, CaretIcon } from "./Icons";
+import { Tooltip } from "react-tooltip";
 
 function StepperModal() {
   return (
@@ -46,28 +47,35 @@ function ModalBody() {
     <div className="ModalBody">
       <div className="FormGroup">
         <label htmlFor="Name">Name</label>
-        <InfoIcon />
+        <InfoIcon tooltipId="NameInfo" content="Name lorem" />
+        <Tooltip id="NameInfo" />
         <input id="Name" placeholder="Bryan Koelpin" />
       </div>
 
       <div className="FormGroup">
         <label htmlFor="Email">Email*</label>
-        <InfoIcon />
+        <InfoIcon tooltipId="EmailInfo" content="Email lorem" />
+        <Tooltip id="EmailInfo" />
         <input id="Email" placeholder="Email Address" />
         <p>Please input a real Email Address</p>
       </div>
 
       <div className="PasswordGroup">
         <div className="FormGroup">
-          <label htmlFor="Password">Password*</label>
-          <InfoIcon />
+          <label htmlFor="Password">Password* </label>
+          <InfoIcon tooltipId="PasswordInfo" content="Password lorem" />
+          <Tooltip id="PasswordInfo" />
           <input id="Password" type="password" placeholder="Password" />
           <p>Please enter your password</p>
         </div>
 
         <div className="FormGroup">
           <label htmlFor="ConfirmPassword">Confirm Password*</label>
-          <InfoIcon />
+          <InfoIcon
+            tooltipId="ConfirmPasswordInfo"
+            content="Confirm Password lorem"
+          />
+          <Tooltip id="ConfirmPasswordInfo" />
           <input id="ConfirmPassword" placeholder="Confirm Password" />
           <p>Passwords need to match</p>
         </div>

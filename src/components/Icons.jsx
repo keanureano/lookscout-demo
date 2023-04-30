@@ -63,7 +63,8 @@ export function CaretIcon() {
   );
 }
 
-export function InfoIcon() {
+// eslint-disable-next-line react/prop-types
+export function InfoIcon({tooltipId, content}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +72,8 @@ export function InfoIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       className="w-6 h-6 stroke-neutral-800"
+      data-tooltip-id={tooltipId}
+      data-tooltip-content={content}
     >
       <path
         strokeLinecap="round"
