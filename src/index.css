@@ -31,7 +31,7 @@
   @apply flex w-full gap-8 p-3;
   @apply text-sm font-semibold rounded-b-none rounded-lg2;
   @apply justify-evenly md:justify-around;
-  @apply dark:bg-gray-800 dark:text-neutral-800;
+  @apply dark:bg-gray-800 dark:text-neutral-800 bg-neutral-50;
 }
 
 .Stepper {
@@ -51,7 +51,7 @@
 .SelectedStep .Step span::before {
   content: "";
   @apply absolute top-3.5 left-8 border border-dashed;
-  @apply w-[20vw] lg:w-[15vw];
+  @apply w-[20vw] md:w-[8vw];
   @apply dark:border-gray-300;
 }
 
@@ -122,7 +122,7 @@
   @apply flex flex-col items-center;
   @apply rounded-t-none text-sm2 rounded-lg2;
   @apply justify-center w-full md:justify-end;
-  @apply dark:bg-gray-800;
+  @apply dark:bg-gray-800 bg-neutral-50;
 }
 
 .NextButton {
