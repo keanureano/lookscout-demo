@@ -16,7 +16,7 @@
 }
 
 .CompanyLogo {
-  @apply text-3xl font-semibold flex gap-2;
+  @apply flex gap-2 text-3xl font-semibold;
   @apply text-gray-900 dark:text-white;
 }
 
@@ -94,7 +94,7 @@
 
 .FormGroup input {
   @apply px-4 py-3;
-  @apply font-normal border rounded-md text-sm2 shadow-sm;
+  @apply font-normal border rounded-md shadow-sm text-sm2;
   @apply dark:border-gray-800 dark:bg-gray-400 border-neutral-700 dark:placeholder-neutral-200;
 }
 
@@ -127,7 +127,7 @@
 
 .NextButton {
   @apply flex justify-center gap-2 my-3;
-  @apply rounded-md shadow-sm bg-primary-600 text-white;
+  @apply text-white rounded-md shadow-sm bg-primary-600;
   @apply self-stretch p-3 mx-6 md:self-end md:mx-12 md:px-4;
 }
 
